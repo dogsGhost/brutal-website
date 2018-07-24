@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: white;
+  color: black;
+  font: 1.125rem/1.25 sans-serif;
+}
+
+h1 {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  text-align: center;
+  font-size: 22vw;
+  line-height: 1;
+  text-transform: uppercase;
+  font-style: italic;
+  animation: invert 0.85s ease infinite alternate;
+}
+
+h1 span {
+  flex: 1 1 auto;
+}
+
+@keyframes invert {
+  from {
+    color: black;
+    background: white;
+  }
+
+  to {
+    color: white;
+    background: black;
+  }
+}
